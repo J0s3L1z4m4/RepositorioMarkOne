@@ -1,3 +1,110 @@
-footer{
-    background-color: blue;
-}
+/*bloque footer*/
+.futer {
+    background-color: blue; }
+  
+  .futer__texto--modificador {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+  
+  /*fin bloque footer*/
+  .atributosTitulo {
+    display: flex;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-size: 45px;
+    letter-spacing: 2px; }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    color: #230a3a;
+    background-image: url(fondo1.jpg);
+    background-repeat: repeat;
+    margin: 15px 15px 15px 15px;
+    /*El codigo de Main, y article ordena en columnas una foto y e texto descriptivo de Devin Townsend*/ }
+  
+  main {
+    display: flex;
+    justify-content: space-between;
+    border-style: groove;
+    align-items: center; }
+  
+  section {
+    padding: 15px 15px 15px 15px; }
+  
+  article {
+    text-align: justify; }
+  
+  .carousel {
+    width: 480px;
+    height: 480px;
+    align-content: center; }
+  
+  header {
+    padding-top: 20px;
+    border-style: double; }
+  
+  .listaOrdenada {
+    list-style-type: decimal-leading-zero;
+    list-style-position: inside; }
+  
+  .listaNoOrdenada {
+    list-style-type: disc;
+    list-style-position: inside; }
+  
+  h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #2e2a2a; }
+  
+  h3 {
+    text-transform: capitalize; }
+  
+  /*bloque informacion*/
+  .informacion {
+    line-height: 1.6;
+    word-spacing: 10px; }
+  
+  .informacion__texto--mod {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: azure; }
+  
+  /*Bloque Carousel*/
+  .carousel {
+    width: 480px;
+    height: 480px;
+    align-content: center; }
+  
+  /*fin carousel*/
+  /*Aplicacion  Media Query para celular del Index*/
+  @media only screen and (max-width: 600px) {
+    #grilla {
+      display: grid;
+      height: 2000px;
+      grid-template-columns: 100%;
+      grid-template-rows: 0.15fr 0.3fr 1fr 0.05fr;
+      grid-template-areas: "cabeza"
+   "minu"
+   "contenido"
+   "pie"; }
+    header {
+      grid-area: cabeza; }
+    .atributosTitulo {
+      font-weight: bold;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      text-align: center;
+      font-size: 28px;
+      letter-spacing: 1px; }
+    nav {
+      grid-area: minu; }
+    main {
+      grid-area: contenido;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-center; }
+    footer {
+      grid-area: pie;
+      text-align: center;
+      align-items: center; } }
+  
