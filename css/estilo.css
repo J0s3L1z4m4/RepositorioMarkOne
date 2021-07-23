@@ -1,0 +1,124 @@
+/*bloque footer*/
+.futer {
+  background-color: grey; }
+
+.futer__texto--modificador {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+
+/*fin bloque footer*/
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bolder;
+  color: #230a3a;
+  background-image: url(fondo1.jpg);
+  background-repeat: repeat;
+  margin: 15px 15px 15px 15px;
+  /*El codigo de Main, y article ordena en columnas una foto y e texto descriptivo de Devin Townsend*/ }
+
+main {
+  display: flex;
+  justify-content: space-between;
+  border-style: groove;
+  align-items: center; }
+
+section {
+  padding: 15px 15px 15px 15px; }
+
+article {
+  text-align: justify; }
+
+.carousel {
+  width: 480px;
+  height: 480px;
+  align-content: center; }
+
+h2 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #2e2a2a; }
+
+/*bloque informacion*/
+.informacion {
+  line-height: 1.6;
+  word-spacing: 10px; }
+
+.informacion__texto--mod {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: azure; }
+
+/*Bloque Carousel*/
+.carousel {
+  width: 480px;
+  height: 480px;
+  align-content: center; }
+
+/*fin carousel*/
+/*Aplicacion  Media Query para celular del Index*/
+@media only screen and (max-width: 600px) {
+  .grilla {
+    display: grid;
+    height: 2000px;
+    grid-template-columns: 100%;
+    grid-template-rows: 0.15fr 0.3fr 1fr 0.05fr;
+    grid-template-areas: "cabeza" "minu" "contenido" "pie"; }
+  .header {
+    grid-area: cabeza;
+    display: flex;
+    justify-content: flex-center; }
+    .header h1 {
+      align-content: center;
+      font-size: 35px;
+      font-weight: bold; }
+  iframe {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  .imagenResposive {
+    width: 100%;
+    height: auto; }
+  .nav {
+    grid-area: minu; }
+  .main {
+    grid-area: contenido;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-center; }
+    .main section {
+      text-align: justify; }
+  .futer {
+    grid-area: pie;
+    ruby-align: center; } }
+
+/*tablets*/
+@media only screen and (min-width: 600px) {
+  .grilla {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 300px 400px 300px;
+    grid-template-areas: "cabeza cabeza" "minu minu" "contenido contenido" "pie pie"; }
+  iframe {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  .imagenResposive {
+    width: 100%;
+    height: auto; }
+  .nav {
+    grid-area: minu; }
+  .main {
+    grid-area: contenido;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-center; }
+    .main section {
+      text-align: justify; }
+  .futer {
+    grid-area: pie;
+    ruby-align: center; } }
