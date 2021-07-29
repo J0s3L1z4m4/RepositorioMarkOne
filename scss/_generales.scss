@@ -1,34 +1,30 @@
-
 * {
     margin: 0;
     padding: 0;
-    }
-
-body {
-    font-family: 'Roboto', sans-serif;
-    font-weight: bolder ;
-    color: rgb(35, 10, 58);
-    background-image: url(fondo1.jpg);
-    background-repeat: repeat; 
-    margin: 15px 15px 15px 15px;
-
-/*El codigo de Main, y article ordena en columnas una foto y e texto descriptivo de Devin Townsend*/
 }
 
+body {
 
+    background: radial-gradient(100px top, ellipse, #E0ECDE, #68B2A0);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    color: rgb(35, 10, 58);
+    margin: 15px 15px 15px 15px;
+}
 
-main{
-    display:flex;
+/*El codigo de Main, y article ordena en columnas una foto y e texto descriptivo de Devin Townsend*/
+main {
+    display: flex;
     justify-content: space-between;
     border-style: groove;
     align-items: center;
 }
 
-section{
+section {
     padding: 15px 15px 15px 15px;
 }
 
-article{
+article {
     text-align: justify;
 }
 
@@ -37,33 +33,34 @@ article{
     width: 480px;
     height: 480px;
     align-content: center;
-} 
+}
 
-h2{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
-    font-weight: bold; 
+h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
     letter-spacing: 2px;
     color: rgb(46, 42, 42);
-    }
+}
 
 
 
 /*bloque informacion*/
 .informacion {
     line-height: 1.6;
-    word-spacing: 10px; }
+    word-spacing: 10px;
+}
 
-.informacion__texto--mod{
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      background-color: azure;
+.informacion__texto--mod {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: azure;
 }
 
 
- /*Bloque Carousel*/
-.carousel{
+/*Bloque Carousel*/
+.carousel {
     width: 480px;
     height: 480px;
-    align-content: center; 
-  }
-  /*fin carousel*/
+    align-content: center;
+}
 
+/*fin carousel*/
